@@ -13,8 +13,11 @@ function spanTextChange(color) {
   spanValue.textContent = color;
 }
 
+
+
 function changeBodyColor(event) {
-  document.body.style.backgroundColor = getRandomHexColor();
-spanTextChange(getRandomHexColor());
+  const newColor = getRandomHexColor();
+  document.body.style.backgroundColor = newColor;
+spanTextChange(newColor);
 }
 
